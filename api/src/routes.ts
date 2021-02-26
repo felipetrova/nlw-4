@@ -6,6 +6,7 @@ const router = Router();
 const userController = new UserController();
 const surveyController = new SurveyController;
 
+router.get("/users", userController.show);
 router.post("/users", userController.create);
 
 router.get("/surveys", surveyController.show);
